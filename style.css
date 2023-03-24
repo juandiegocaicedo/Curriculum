@@ -18,7 +18,6 @@ html{
     top: 0;
     left: 0;
     z-index: 99;
-
 }
 .contenedor-header header{
     max-width: 1100px;
@@ -33,8 +32,6 @@ html{
     font-size: 36px;
     color:aquamarine;
     text-decoration: none;
-    
-
 }
 .contenedor-header header ul{
     display: flex;
@@ -47,8 +44,6 @@ html{
     padding: 3px;
     transition: .5s;
     text-decoration: none;
-
-
 }
 .contenedor-header header nav ul li a:hover{
     color: aquamarine;
@@ -77,8 +72,7 @@ html{
     max-width: 350px;
     margin: auto;
     text-align:center;
-    border-radius: 40px;
-    
+    border-radius: 40px; 
 }
 
 .inicio .contenido-banner img{
@@ -117,31 +111,29 @@ html{
 .sobremi{
     background-color: #1e2326;
     color: #fff;
-    padding: 50px 20px;
+    padding: 120px 20px;
 }
 .sobremi .contenido-seccion{
     max-width: 1100px;
     margin: auto;
 }
 .sobremi h2{
-    font-size: 28px;
+    font-size: 48px;
     font-family: 'Edu NSW ACT Foundation', cursive;
     text-align: center;
     padding: 20px 0;
-
-
 }
 .sobremi .contenido-seccion p{
-    font-family: 'Edu NSW ACT Foundation', cursive;
-    font-size: medium;
-    line-height: 20px;
-   
-    
+    font: 18px;
+    line-height: 35px;
+    margin-bottom: 25px;
 }
-
+.sobremi .contenido-seccion p span{
+    color: #1CB698;
+    font-weight: bold;    
+}
 .sobremi .fila{
     display: flex;
-   
 }
 .sobremi .fila .col{
     width: 50%;
@@ -155,15 +147,15 @@ html{
 .sobremi .fila .col ul{
     list-style: none;
     font-size: 28px;
+    
 }
 .sobremi .fila .col ul li{
-    margin: 12px 0;
+    margin: 15px 0;
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
     color: aquamarine;
     width: 130px;
-    font-size: 28px;
 }
 .sobremi .fila .col ul li span{
     background-color: #1CB698;
@@ -171,4 +163,298 @@ html{
     font-weight: bold;
     border-radius: 5px;
 }
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #1e2326;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #1CB698;
+}
+.sobremi .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 100px 150px;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+/*SECCION SKILLS*/
+
+.skills{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 100px 0 0 200px; 
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 28px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    text-align: center;
+    padding: 20px 0;
+}
+.skills .fila {
+    display: flex;
+    
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 50px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    margin-bottom: 25px;
+    
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: black;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: #1CB698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+   
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1CB698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 20%;}
+}
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.skills .skill .photoshop{
+    width: 0%;
+    animation: 2s photoshop forwards;
+}
+@keyframes photoshop {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+.skills .skill .wordpress{
+    width: 0%;
+    animation: 2s wordpress forwards;
+}
+@keyframes wordpress {
+    0%{width: 0%;}
+    100%{width: 81%;}
+}
+.skills .skill .wordpress{
+    width: 0%;
+    animation: 2s wordpress forwards;
+}
+@keyframes wordpress {
+    0%{width: 0%;}
+    100%{width: 81%;}
+}
+.skills .skill .sql {
+    width: 0%;
+    animation: 2s sql forwards;
+}
+@keyframes sql {
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+.skills .skill .mongo{
+    width: 0%;
+    animation: 2s mongo forwards;
+}
+@keyframes mongo {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.skills .skill .formacion{
+    width: 0%;
+    animation: 2s formacion forwards;
+}
+@keyframes formacion {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.skills .skill .formacion{
+    width: 0%;
+    animation: 2s formacion forwards;
+}
+@keyframes formacion {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+.skills .skill .experiencia{
+    width: 0%;
+    animation: 2s experiencia forwards;
+}
+@keyframes experiencia {
+    0%{width: 0%;}
+    100%{width: 25%;}
+}
+.skills .skill .liderazgo{
+    width: 0%;
+    animation: 2s liderazgo forwards;
+}
+@keyframes liderazgo {
+    0%{width: 0%;}
+    100%{width: 81%;}
+}
+.skills .skill .adaptabilidad{
+    width: 0%;
+    animation: 2s adaptabilidad forwards;
+}
+@keyframes adaptabilidad {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+.skills .skill .honestidad{
+    width: 0%;
+    animation: 2s honestidad forwards;
+}
+@keyframes honestidad {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+/*Seccion Curriculum*/
+
+.curriculum {
+    background-color: #1e2326;
+    color: #fff;
+    padding:50px 0 0 50px;
+    
+}
+.curriculum .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+    
+}
+.curriculum h2 {
+    font-size: 60px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    text-align:center;
+    padding: 20px 0;
+}
+.curriculum .fila {
+    display: flex;
+    
+}
+.curriculum .fila .col{
+    width: 50%;
+    padding: 0 20px;
+    
+}
+
+.curriculum .fila .col h3{
+    font-size: 40px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    margin-bottom: 0px;
+    
+}
+.curriculum .fila .izquierda{
+    border-right: 2px solid #1e2326;
+
+}
+.curriculum .fila .derecha{
+    border-right: 2px solid #1e2326;
+    
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #1e2326;
+    position: relative;
+}
+
+.curriculum .fila .item .casa{
+    color: #1CB698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+
 
