@@ -570,8 +570,8 @@ html{
 }
 /*Contacto*/
 .contacto{
-    background-image: url(img/contact_bg.png);
     background: url(/img/2baefcb4425153a079b3ba865ac7eeba.png);
+    background-color:#94AF9F;
     color: #fff;
     color: #fff;
     padding: 50px 0;
@@ -636,8 +636,7 @@ html{
 .contacto .col .info{
     position: absolute;
     top: 40%;
-    background-color: #252A2E;
-    padding: 20px;
+    background-color: transparent;
     max-swidth: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -654,7 +653,7 @@ html{
     margin-right: 20px;
 }
 footer{
-    background-color: #252A2E;
+    background: url(/img/2baefcb4425153a079b3ba865ac7eeba.png);
     color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;
