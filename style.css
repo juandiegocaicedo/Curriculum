@@ -19,6 +19,11 @@ html{
     left: 0;
     z-index: 99;
 }
+.contenedor-header header img{
+    width: 40%;
+    margin: 30;
+    padding: 0;
+}
 .contenedor-header header{
     max-width: 1100px;
     margin: auto;
@@ -29,9 +34,9 @@ html{
 }
 .contenedor-header header .logo a{
     font-family: 'Edu NSW ACT Foundation', cursive;
-    font-size: 36px;
+    font-size: 40px;
     color:aquamarine;
-    text-decoration: none;
+    text-decoration:solid;
 }
 .contenedor-header header ul{
     display: flex;
@@ -58,9 +63,9 @@ html{
 }
 /*SECCION I N I C I O */
 .inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1),rgba(30,35,38,.8)),
-    url(/img/2baefcb4425153a079b3ba865ac7eeba.png);
-    background-size: cover;
+    
+    background: url(/img/2baefcb4425153a079b3ba865ac7eeba.png);
+    background-size:auto;
     height: 100vh;
     color: #fff;
     display: flex;
@@ -76,7 +81,7 @@ html{
 }
 
 .inicio .contenido-banner img{
-    margin-top: 40px;
+    margin-top: px;
     border: 10px solid #1CB698;
     display: block;
     width: 80%;
@@ -109,7 +114,7 @@ html{
     background-color:  #1CB698 ;
 }
 .sobremi{
-    background-color: #1e2326;
+    background: url(/img/2baefcb4425153a079b3ba865ac7eeba.png);
     color: #fff;
     padding: 120px 20px;
 }
@@ -227,7 +232,7 @@ html{
 /*SECCION SKILLS*/
 
 .skills{
-    background-color: #1e2326;
+    background: url(/img/2baefcb4425153a079b3ba865ac7eeba.png);
     color: #fff;
     padding: 100px 0 0 200px; 
 }
@@ -401,62 +406,165 @@ html{
 }
 /*Seccion Curriculum*/
 
-.curriculum {
-    background-color: #1e2326;
+.curriculum{
+    background: url(/img/2baefcb4425153a079b3ba865ac7eeba.png);
     color: #fff;
-    padding:50px 0 0 50px;
-    
+    padding: 50px 20px;
 }
-.curriculum .contenido-seccion {
+.curriculum .contenido-seccion{
     max-width: 1100px;
     margin: auto;
-    
 }
-.curriculum h2 {
-    font-size: 60px;
-    font-family: 'Edu NSW ACT Foundation', cursive;
-    text-align:center;
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
     padding: 20px 0;
-    
-   
+
 }
-.curriculum .fila {
+.curriculum .fila{
     display: flex;
-    
+    justify-content: space-between;
 }
 .curriculum .fila .col{
-    width: 50%;
-    padding: 0;
-    
+    width: 49%;
+    padding: 0 20px;
 }
-
 .curriculum .fila .col h3{
-    font-size: 40px;
-    font-family: 'Edu NSW ACT Foundation', cursive;
-    margin-bottom: 0px;
-    
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
 }
 .curriculum .fila .izquierda{
-    border-right: 2px solid #1e2326;
-
+    border-right: 2px solid #252A2E;
 }
 .curriculum .fila .derecha{
-    border-right: 2px solid #1e2326;
-    
+    border-left: 2px solid #252A2E;
 }
 .curriculum .fila .item{
     padding: 25px;
     margin-bottom: 30px;
-    background-color: #1e2326;
+    background-color: #252A2E;
     position: relative;
 }
-
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 .curriculum .fila .item .casa{
     color: #1CB698;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
-
-
-
+.curriculum .fila .item .fecha{
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid #1CB698;
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-left: 2px solid #1CB698;
+    margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+/* Seccion Portafolio*/
+.portfolio{
+    background: url(/img/2baefcb4425153a079b3ba865ac7eeba.png);
+    color: #fff;
+    padding: 50px 20px;
+}
+.portfolio .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.portfolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.portfolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.portfolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.portfolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.portfolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.portfolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
