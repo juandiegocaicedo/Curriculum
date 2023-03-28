@@ -12,7 +12,7 @@ html{
 }
 /* MENU */
 .contenedor-header{
-    background: #1e2326;
+    background: grey;
     position: fixed;
     width: 100%;
     top: 0;
@@ -64,7 +64,7 @@ html{
 /*SECCION I N I C I O */
 .inicio{
     
-    background: url(/img/2baefcb4425153a079b3ba865ac7eeba.png);
+    background-color: black;
     background-size:auto;
     height: 100vh;
     color: #fff;
@@ -114,7 +114,7 @@ html{
     background-color:  #1CB698 ;
 }
 .sobremi{
-    background: url(/img/2baefcb4425153a079b3ba865ac7eeba.png);
+    background-color: black;
     color: #fff;
     padding: 120px 20px;
 }
@@ -232,7 +232,7 @@ html{
 /*SECCION SKILLS*/
 
 .skills{
-    background: url(/img/2baefcb4425153a079b3ba865ac7eeba.png);
+    background-color: black;
     color: #fff;
     padding: 100px 0 0 200px; 
 }
@@ -268,7 +268,7 @@ html{
 .skills .skill .barra-skill{
     height: 8px;
     width: 80%;
-    background-color: black;
+    background-color: white;
     position: relative;
     margin-bottom: 30px;
 }
@@ -407,7 +407,8 @@ html{
 /*Seccion Curriculum*/
 
 .curriculum{
-    background: url(/img/2baefcb4425153a079b3ba865ac7eeba.png);
+    background-color: black;
+    background-repeat: round;
     color: #fff;
     padding: 50px 20px;
 }
@@ -513,7 +514,9 @@ html{
 }
 /* Seccion Portafolio*/
 .portafolio{
-    background: url(/img/2baefcb4425153a079b3ba865ac7eeba.png);
+    background-color: black;
+    background-repeat: round;
+    background-size:cover;
     color: #fff;
     padding: 50px 20px;
 }
@@ -570,11 +573,11 @@ html{
 }
 /*Contacto*/
 .contacto{
-    background: url(/img/2baefcb4425153a079b3ba865ac7eeba.png);
-    background-color:#94AF9F;
-    color: #fff;
-    color: #fff;
+    background-color: black;
+    background-repeat:round;
+    color: #22A39F;
     padding: 50px 0;
+    background-size:cover;
 }
 .contacto .contenido-seccion{
     max-width: 1100px;
@@ -653,7 +656,7 @@ html{
     margin-right: 20px;
 }
 footer{
-    background: url(/img/2baefcb4425153a079b3ba865ac7eeba.png);
+    background-color: black;
     color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;
